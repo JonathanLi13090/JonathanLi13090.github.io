@@ -1,25 +1,47 @@
+/* Apply a minimalist look with rounder font and sharper text boxes */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: #333;
     padding: 1em;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 nav a {
-    color: white;
+    color: #333;
     margin: 0 1em;
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #333;
 }
 
 main {
-    padding: 1em;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -28,7 +50,7 @@ ul {
 }
 
 li {
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 a {
@@ -38,4 +60,19 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+header h1, main h1 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
