@@ -10,7 +10,7 @@ body {
 header {
     background-color: #c9e1ff; /* light blue */
     color: #333;
-    padding: 1em;
+    padding: 10px;
     text-align: left;
     border: none;
     border-radius: 8px 8px 8px 8px;
@@ -18,7 +18,7 @@ header {
     top: 20px;
     left: 20px;
     height: calc(100% - 20px);
-    width: 150px;
+    width: 200px;
     background-image: url('images/blue_sky_white_ground_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,22 +26,22 @@ header {
 
 header h1 {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 48px;
     margin: 0;
     padding: 0;
 }
 
 nav {
-    margin-top: 4em;
+    margin-top: 20px;
 }
 
 nav a {
     display: block;
     color: #333;
-    margin: 1em 0;
+    margin: 10px 0;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.5em 1em;
+    padding: 6px 6px;
     border: 1px solid transparent;
     border-radius: 8px;
     transition: all 0.5s ease;
@@ -54,10 +54,10 @@ nav a:hover {
 
 main {
     margin-left: 220px;
-    padding: 2em;
+    padding: 10px;
     max-width: 800px;
     background-color: #ffffff;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 8px;
 }
 
@@ -67,7 +67,7 @@ ul {
 }
 
 li {
-    margin: 1em 0;
+    margin: 10px 0;
 }
 
 a {
@@ -96,13 +96,13 @@ img {
 
 .rounded-box {
     background-color: #c9e1ff; /* light blue */
-    padding: 1em;
+    padding: 10px;
     border-radius: 8px;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
     border: 1px solid #aeb1bf; /* light gray */
 }
 
 main, p, h1, nav, li {
     border-radius: 8px;
-    padding: 1em 2em;
+    padding: 10px 10px;
 }
