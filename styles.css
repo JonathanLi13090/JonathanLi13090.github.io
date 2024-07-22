@@ -1,60 +1,63 @@
-/* Apply a light blue and light green theme with rounded text and UI elements, and move the navigation to the side */
-
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #e0f7fa;
+    background-color: #ffffff;
     color: #333;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
 header {
-    background-color: #80deea;
-    color: #004d40;
+    background-color: #e0f7fa; /* Very light blue */
+    color: #333;
     padding: 1em;
-    text-align: center;
-    border-bottom: 1px solid #00796b;
-    font-size: 1.5em;
+    text-align: left;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
     font-weight: 300;
-    border-radius: 0 0 10px 10px;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-    background-color: #4db6ac;
-    width: 200px;
-    padding: 1em;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    flex-shrink: 0;
+    margin-top: 2em;
 }
 
 nav a {
     display: block;
-    color: #004d40;
+    color: #333;
     margin: 1em 0;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.5em;
-    border-radius: 8px;
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #00796b;
+    background-color: #80cbc4; /* Very light green */
     color: #ffffff;
 }
 
 main {
+    margin-left: 220px;
     padding: 2em;
+    max-width: 800px;
     background-color: #ffffff;
-    border: 1px solid #b2dfdb;
+    border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: 220px;
-    flex: 1;
 }
 
 ul {
@@ -67,7 +70,7 @@ li {
 }
 
 a {
-    color: #004d40;
+    color: #333;
     text-decoration: none;
 }
 
@@ -88,4 +91,17 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+}
+
+.rounded-box {
+    background-color: #e0f7fa; /* Very light blue */
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    border: 1px solid #80cbc4; /* Very light green */
+}
+
+main, p, h1, nav, li {
+    border-radius: 8px;
+    padding: 0.5em 1em;
 }
