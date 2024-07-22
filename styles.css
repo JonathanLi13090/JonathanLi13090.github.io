@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #e0f7fa; /* Very light blue */
+    background-color: #9be1fa; /* Very light blue */
     color: #333;
     padding: 1em;
     text-align: left;
@@ -19,7 +19,6 @@ header {
     left: 0;
     height: 100%;
     width: 200px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -46,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #80cbc4; /* Very light green */
+    background-color: #bcf7d7; /* Very light green */
     color: #ffffff;
 }
 
@@ -57,7 +56,6 @@ main {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -94,11 +92,11 @@ img {
 }
 
 .rounded-box {
-    background-color: #e0f7fa; /* Very light blue */
+    background-color: #9be1fa; /* Very light blue */
     padding: 1em;
     border-radius: 8px;
     margin-bottom: 1em;
-    border: 1px solid #80cbc4; /* Very light green */
+    border: 1px solid #bcf7d7; /* Very light green */
 }
 
 main, p, h1, nav, li {
