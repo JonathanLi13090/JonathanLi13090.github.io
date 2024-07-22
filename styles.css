@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #9be1fa; /* Very light blue */
+    background-color: #b6dffa; /* light blue */
     color: #333;
     padding: 1em;
     text-align: left;
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #bcf7d7; /* Very light green */
+    background-color: #a7b9c4; /* light gray */
     color: #ffffff;
 }
 
@@ -92,14 +92,14 @@ img {
 }
 
 .rounded-box {
-    background-color: #9be1fa; /* Very light blue */
+    background-color: #b6dffa; /* light blue */
     padding: 1em;
     border-radius: 8px;
     margin-bottom: 1em;
-    border: 1px solid #bcf7d7; /* Very light green */
+    border: 2px solid #a7b9c4; /* light gray */
 }
 
 main, p, h1, nav, li {
     border-radius: 8px;
-    padding: 0.5em 1em;
+    padding: 1em 2em;
 }
