@@ -17,7 +17,7 @@ header {
     position: fixed;
     top: 4em;
     left: 4em;
-    height: 100%;
+    height: calc(100% - 4em);
     width: 200px;
     background-image: url('images/blue_sky_white_ground_bg.png');
     background-size: cover;
