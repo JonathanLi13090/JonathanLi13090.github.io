@@ -1,3 +1,5 @@
+/* Minimalist light blue and light green theme with rounded borders and a background image for the nav bar */
+
 body {
     font-family: 'Caveat', 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -8,57 +10,60 @@ body {
 }
 
 header {
-    background-color: #c9e1ff; /* light blue */
+    background-color: #e0f7fa; /* Very light blue */
     color: #333;
-    padding: 10px;
+    padding: 1em;
     text-align: left;
     border: none;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 0 8px 8px 0;
     position: fixed;
-    top: 20px;
-    left: 20px;
-    height: calc(100% - 20px);
-    width: 200px;
-    background-image: url('images/blue_sky_white_ground_bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    top: 20px; /* Add space from the top */
+    left: 20px; /* Add space from the left */
+    height: calc(100% - 40px); /* Adjust height to account for top and bottom margins */
+    width: 150px; /* Make the navigation bar thinner */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-image: url('images/nav-bg.jpg'); /* Background image */
+    background-size: cover; /* Make sure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 header h1 {
     font-weight: 300;
-    font-size: 48px;
+    font-size: 1.2em; /* Adjust font size for thinner nav bar */
     margin: 0;
     padding: 0;
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 2em;
 }
 
 nav a {
     display: block;
     color: #333;
-    margin: 10px 0;
+    margin: 1em 0;
     text-decoration: none;
     font-weight: bold;
-    padding: 6px 6px;
+    padding: 0.5em 1em;
     border: 1px solid transparent;
-    border-radius: 8px;
-    transition: all 0.5s ease;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better readability */
 }
 
 nav a:hover {
-    background-color: #aeb1bf; /* light gray */
+    background-color: rgba(128, 203, 196, 0.8); /* Very light green with opacity */
     color: #ffffff;
 }
 
 main {
-    margin-left: 220px;
-    padding: 10px;
+    margin-left: 190px; /* Adjust margin-left to match the thinner nav bar and its left margin */
+    padding: 2em;
     max-width: 800px;
     background-color: #ffffff;
-    border: 3px solid #ddd;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -67,11 +72,11 @@ ul {
 }
 
 li {
-    margin: 10px 0;
+    margin: 1em 0;
 }
 
 a {
-    color: #849bbf;
+    color: #333;
     text-decoration: none;
 }
 
@@ -81,7 +86,7 @@ a:hover {
 
 header h1, main h1 {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 2em;
 }
 
 p {
@@ -95,14 +100,14 @@ img {
 }
 
 .rounded-box {
-    background-color: #c9e1ff; /* light blue */
-    padding: 10px;
+    background-color: #e0f7fa; /* Very light blue */
+    padding: 1em;
     border-radius: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #aeb1bf; /* light gray */
+    margin-bottom: 1em;
+    border: 1px solid #80cbc4; /* Very light green */
 }
 
 main, p, h1, nav, li {
     border-radius: 8px;
-    padding: 10px 10px;
+    padding: 0.5em 1em;
 }
