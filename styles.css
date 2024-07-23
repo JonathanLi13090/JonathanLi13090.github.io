@@ -15,7 +15,7 @@ header {
     padding: 1em;
     text-align: left;
     border: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px 8px 8px 8px;
     position: fixed;
     top: 20px; /* Add space from the top */
     left: 20px; /* Add space from the left */
@@ -32,6 +32,7 @@ header h1 {
     font-size: 1.2em; /* Adjust font size for thinner nav bar */
     margin: 0;
     padding: 0;
+    color: #ffffff
 }
 
 nav {
