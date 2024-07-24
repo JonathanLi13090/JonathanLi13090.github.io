@@ -16,7 +16,7 @@ header {
     border-radius: 8px 8px 8px 8px;
     position: fixed;
     top: 20px; /* Add space from the top */
-    left: 100px; /* Add space from the left */
+    left: 120px; /* Add space from the left */
     height: calc(100% - 40px); /* Adjust height to account for top and bottom margins */
     width: 150px; /* Make the navigation bar thinner */
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ main {
     padding: 2em;
     max-width: 800px;
     background-color: #ffffff;
-    border: 1px solid #ddd;
+    border: 1px solid #b2c8d6;
     border-radius: 8px;
 }
 
@@ -103,7 +103,6 @@ img {
     padding: 1em;
     border-radius: 8px;
     margin-bottom: 1em;
-    border: 1px solid #80cbc4; /* Very light green */
 }
 
 main, p, h1, nav, li {
