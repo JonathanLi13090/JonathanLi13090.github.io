@@ -56,8 +56,8 @@ nav a:hover {
 }
 
 main {
-    margin-left: 220px; /* Adjust margin-left to match the thinner nav bar and its left margin */
-    margin-top: 20px;
+    margin-left: 320px; /* Adjust margin-left to match the thinner nav bar and its left margin */
+    margin-top: 60px;
     padding: 2em;
     max-width: 800px;
     background-color: #ffffff;
