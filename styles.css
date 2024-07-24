@@ -19,7 +19,6 @@ header {
     left: 120px; /* Add space from the left */
     height: calc(100% - 40px); /* Adjust height to account for top and bottom margins */
     width: 150px; /* Make the navigation bar thinner */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     background-image: url('images/blue_sky_white_ground_bg.png'); /* Background image */
     background-size: cover; /* Make sure the image covers the entire area */
     background-repeat: no-repeat; /* Prevent the image from repeating */
