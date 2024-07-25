@@ -2,8 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     const body = document.body;
-    const numberOfRaindrops = 50; // Number of raindrops
-    const fallingSpeed = 1; // Falling speed in seconds
+    const numberOfRaindrops = 30; // Number of raindrops
+    const fallingSpeed = 0.8; // Falling speed in seconds
 
     for (let i = 0; i < numberOfRaindrops; i++) {
         const drop = document.createElement('div');
