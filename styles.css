@@ -26,7 +26,7 @@ header {
 
 header h1 {
     font-weight: 300;
-    font-size: 1.2em; /* Adjust font size for thinner nav bar */
+    font-size: 1.5em; /* Adjust font size for thinner nav bar */
     margin: 0;
     padding: 0;
     color: #ffffff
@@ -45,7 +45,7 @@ nav a {
     padding: 0.5em 1em;
     border: 1px solid transparent;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
     background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better readability */
 }
 
@@ -99,9 +99,9 @@ img {
 
 .rounded-box {
     background-color: #d4ecff; /* Very light blue */
-    padding: 1em;
+    padding: 2em;
     border-radius: 8px;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 main, p, h1, nav, li {
