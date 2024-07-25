@@ -144,6 +144,8 @@ main, p, h1, nav, li {
         opacity: 0.5;
     }
     90% {
-        opacity: 0;
+        opacity: 0.1;
     }
+    100% {
+        opacity: 0;
 }
