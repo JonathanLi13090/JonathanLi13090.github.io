@@ -8,6 +8,7 @@ body {
     background-color: #ffffff;
     color: #333;
     overflow: hidden; /* To ensure no scrollbars appear */
+    position: relative; /* Ensure raindrops are positioned relative to the body */
 }
 
 header {
@@ -25,6 +26,7 @@ header {
     background-image: url('images/blue_sky_white_ground_bg.png'); /* Background image */
     background-size: cover; /* Make sure the image covers the entire area */
     background-repeat: no-repeat; /* Prevent the image from repeating */
+    z-index: 2; /* Ensure header is above raindrops */
 }
 
 header h1 {
@@ -65,6 +67,8 @@ main {
     background-color: #ffffff;
     border: 1px solid #b2c8d6;
     border-radius: 8px;
+    z-index: 1; /* Ensure main content is above raindrops */
+    position: relative; /* Ensure z-index works */
 }
 
 ul {
@@ -124,6 +128,7 @@ main, p, h1, nav, li {
     background: rgba(0, 0, 255, 0.5);
     border-radius: 50%;
     animation: fall linear infinite, fade linear infinite;
+    z-index: 0; /* Ensure raindrops are behind other elements */
 }
 
 @keyframes fall {
