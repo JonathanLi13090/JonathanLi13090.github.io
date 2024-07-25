@@ -118,15 +118,28 @@ main, p, h1, nav, li {
 /* Rain Effect */
 .rain-drop {
     position: fixed;
-    top: 0;
+    top: -10%;
     width: 2px;
-    height: 20px;
+    height: 15px;
     background: rgba(0, 0, 255, 0.5);
-    animation: fall linear infinite;
+    border-radius: 50%;
+    animation: fall linear infinite, fade linear infinite;
 }
 
 @keyframes fall {
     to {
-        transform: translateY(100vh);
+        transform: translateY(110vh);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
     }
 }
