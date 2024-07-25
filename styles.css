@@ -16,7 +16,7 @@ header {
     border-radius: 8px 8px 8px 8px;
     position: fixed;
     top: 20px; /* Add space from the top */
-    left: 120px; /* Add space from the left */
+    left: 20px; /* Add space from the left */
     height: calc(100% - 40px); /* Adjust height to account for top and bottom margins */
     width: 150px; /* Make the navigation bar thinner */
     background-image: url('images/blue_sky_white_ground_bg.png'); /* Background image */
@@ -25,8 +25,8 @@ header {
 }
 
 header h1 {
-    font-weight: 300;
-    font-size: 1.5em; /* Adjust font size for thinner nav bar */
+    font-weight: 350;
+    font-size: 1.75em; /* Adjust font size for thinner nav bar */
     margin: 0;
     padding: 0;
     color: #ffffff
