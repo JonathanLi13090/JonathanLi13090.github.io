@@ -1,3 +1,5 @@
+/* Minimalist light blue and light green theme with rounded borders and a background image for the nav bar */
+
 body {
     font-family: 'Caveat', 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -5,6 +7,7 @@ body {
     box-sizing: border-box;
     background-color: #ffffff;
     color: #333;
+    overflow: hidden; /* To ensure no scrollbars appear */
 }
 
 header {
@@ -29,7 +32,7 @@ header h1 {
     font-size: 1.75em; /* Adjust font size for thinner nav bar */
     margin: 0;
     padding: 0;
-    color: #ffffff
+    color: #ffffff;
 }
 
 nav {
@@ -110,4 +113,20 @@ img {
 main, p, h1, nav, li {
     border-radius: 8px;
     padding: 0.5em 1em;
+}
+
+/* Rain Effect */
+.rain-drop {
+    position: fixed;
+    top: 0;
+    width: 2px;
+    height: 20px;
+    background: rgba(0, 0, 255, 0.5);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
 }
