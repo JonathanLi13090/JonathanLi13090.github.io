@@ -2,9 +2,9 @@
 
 /* Shared styles. Edit the accent here to change sidebar highlights. */
 :root {
-  --accent: #a33b24;
+  --accent: #52dbbd;
   --text: #252525;
-  --muted: #666;
+  --muted: #5f6574;
   --border: #e4e2de;
 }
 
