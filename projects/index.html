@@ -9,16 +9,16 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <!-- Keep this shared sidebar consistent across all pages. -->
+    <!-- Keep this sidebar consistent across all projects pages; mark only the current page. -->
     <aside class="sidebar">
       <a class="site-name" href="../index.html">Your Name</a>
-      <nav aria-label="Main navigation">
+      <nav aria-label="Project navigation">
+        <p aria-current="page"><strong>Featured Projects (current page)</strong></p>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../resume.html">Resume</a></li>
-          <li><a href="../projects/index.html" aria-current="page">Featured Projects</a></li>
-          <li><a href="../blog/index.html">Blog</a></li>
+          <li><a href="example-project.html">Example Project</a></li>
+          <li><a href="project-two.html">Project Two</a></li>
+          <li><a href="project-three.html">Project Three</a></li>
         </ul>
       </nav>
       <footer>&copy; <span data-current-year>2026</span> Your Name</footer>
@@ -26,7 +26,11 @@
     <main id="main-content" tabindex="-1">
       <h1>Featured projects</h1>
       <p>Add your featured projects here.</p>
-      <ul><li><a href="example-project.html">Example project</a></li></ul>
+      <ul>
+        <li><a href="example-project.html">Example Project</a></li>
+        <li><a href="project-two.html">Project Two</a></li>
+        <li><a href="project-three.html">Project Three</a></li>
+      </ul>
     </main>
   </body>
 </html>
