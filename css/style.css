@@ -1,20 +1,36 @@
-/* Shared styles for every page. */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* Shared styles. Edit the accent here to change sidebar highlights. */
+:root {
+  --accent: #a33b24;
+  --text: #252525;
+  --muted: #666;
+  --border: #e4e2de;
+}
+
 * { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.6; color: #222; background: #fff; }
-a { color: #234b87; }
-.sidebar { position: fixed; inset: 0 auto 0 0; width: 15rem; padding: 2rem 1.5rem; overflow-y: auto; background: #f5f5f5; border-right: 1px solid #ddd; }
-.site-name { font-size: 1.25rem; font-weight: bold; }
+body { margin: 0; font-family: 'Work Sans', sans-serif; line-height: 1.6; color: var(--text); background: #fff; }
+a { color: inherit; text-underline-offset: 0.2em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+h1, h2, h3, h4, h5, h6, .site-name { font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; line-height: 1.15; }
+h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); margin: 0 0 1rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+.sidebar { position: fixed; inset: 0 auto 0 0; width: 15rem; padding: 2rem 1.5rem; overflow-y: auto; background: #f8f7f5; border-right: 1px solid var(--border); }
+.site-name { display: inline-block; font-size: 2rem; text-decoration: none; }
 nav ul { list-style: none; padding: 0; margin: 2rem 0; }
-nav a { display: block; padding: 0.4rem 0; }
-nav a[aria-current] { font-weight: bold; }
-footer { font-size: 0.875rem; }
+nav a { display: block; padding: 0.5rem 0 0.5rem 0.75rem; border-left: 2px solid transparent; text-decoration: none; }
+nav a:hover, nav a:focus-visible { color: var(--accent); }
+nav a[aria-current="page"] { color: var(--accent); border-left-color: var(--accent); font-weight: 600; }
+nav p[aria-current="page"] { color: var(--accent); border-left: 2px solid var(--accent); padding-left: 0.75rem; font-size: 0.875rem; }
+footer { font-size: 0.8rem; color: var(--muted); }
 main { margin-left: 15rem; max-width: 60rem; padding: 2rem; }
 img { max-width: 100%; height: auto; }
 .skip-link { position: fixed; top: 0.5rem; left: 0.5rem; transform: translateY(-200%); padding: 0.5rem 1rem; background: #fff; z-index: 1; }
 .skip-link:focus { transform: translateY(0); }
 /* Navigation flows above the content on small screens. */
 @media (max-width: 640px) {
-  .sidebar { position: static; width: 100%; padding: 1rem; border-right: 0; border-bottom: 1px solid #ddd; }
+  .sidebar { position: static; width: 100%; padding: 1rem; border-right: 0; border-bottom: 1px solid var(--border); }
   nav ul { margin: 1rem 0; }
   main { margin-left: 0; padding: 1rem; }
 }

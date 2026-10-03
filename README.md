@@ -2,6 +2,8 @@
 
 A simple HTML, CSS, and vanilla JavaScript portfolio. No build step or dependencies.
 
+Typography uses Instrument Serif for headings and the site name, and Work Sans for body text and navigation, loaded through Google Fonts with system fallbacks. The shared stylesheet defines a single terracotta accent in --accent for sidebar highlights and focus indicators. All elements use square edges.
+
 ## Structure
 
 ```text
